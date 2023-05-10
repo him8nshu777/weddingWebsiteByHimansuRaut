@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@500&family=EB+Garamond&family=Parisienne&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+
+nav{
+    z-index: +1;
+    position: fixed;
+    width: 100%;
+    background-color: antiquewhite;
+    height: 5.0rem;
+    
+    text-decoration: none;
+    list-style: none;
+}
+.toggle_btn i{
+    font-size: 33px;
+    cursor: pointer;
+    margin: 5px 32px;
+}
+.dropDown_menu{
+    position: fixed;
+    left: 20px;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(99, 87, 87, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 1.7rem;
+
+}
+.dropDown_menu.open{
+    height: 220px;
+    z-index: +1;
+
+}
+.dropDown_menu a{
+    text-decoration: none;
+}
+.dropDown_menu li{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.flower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:-1;
+    position: relative;
+    width: 100%;
+    height: 55rem;
+    column-gap: 20rem;
+    bottom: 8.5rem;
+}
+.flowerimg{
+    transform: rotate(40deg);
+    object-fit: contain;
+    width: 30vw;
+height: 65vh;
+}
+.mirror{
+    object-fit: contain;
+width: 30vw;
+height: 65vh;
+    transform:scaleX(-1) rotate(40deg); /*for flipping image*/
+}
+
+.nameOfCouple pre{
+    font-size: 3vw;
+    font-family: 'Parisienne', cursive;
+    position: relative;
+    bottom: 2rem;
+}
+.nameOfCouple{
+    display:flex;
+    justify-content:center;
+    position: relative;
+    bottom: 255px;
+    margin-bottom: -300px;
+    
+}
+.coupleImage{
+   display: flex;
+   justify-content: center;
+   height: 46.8rem;
+}
+
+.date{
+    margin: 5.0rem auto 0rem auto;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;    
+    width: 80%;
+    font-size: larger;
+    background-color: #F6F2F2;
+    height: 10.0rem;
+    font-size: 3.0rem;
+    font-family: 'Dosis', sans-serif;
+}
+.aboutCouple1{
+    height: 100.0rem;
+    background: #F6F2F2;
+    width: 80%;
+    margin: 5.0rem auto 0rem auto;
+}
+.headings{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.0rem;
+    margin: 5.0rem auto 0rem auto;
+}
+.aboutCoupleBride{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 25.5rem;
+    margin-top: 5.0rem;
+    column-gap: 8.5rem;
+}
+.aboutBride{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.0rem;
+    width: 34.5vw;
+    height: 55vh;
+    font-family: 'EB Garamond', serif;
+}
+.aboutBride p{
+    font-size: 2.5rem;
+}
+.brideImage img{
+    object-fit: contain;
+    width: 20vw;
+    height:50vh;
+}
+.aboutCoupleGroom{
+    display: flex;
+    justify-content: left;
+    padding: 0px 21.0rem;
+    margin-top: 5.0rem;
+    column-gap: 10.5rem;
+}
+.aboutGroom{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.0rem;
+    width: 34.5vw;
+    height: 55vh;
+font-family: 'EB Garamond', serif;
+}
+.aboutGroom p{
+    font-size: 2.5rem;
+}
+.ourStory2{
+    height: 90.0rem;
+    background: #F6F2F2;
+    width: 80%;
+    margin: 5.0rem auto 0rem auto;
+}
+.ourStoryPara{
+    font-size: 3.0rem;
+    text-align: center;
+    margin: 5.0rem 16.5rem;
+font-family: 'EB Garamond', serif;
+}
+
+.eventInformation3{
+    height: 60.0rem;
+    background: #F6F2F2;
+    width: 80%;
+    margin: 5.0rem auto 0rem auto;
+}
+
+.eventPara{
+    font-size: 3.0rem;
+    margin: 5.0rem 0rem 0rem 27.7%;
+font-family: 'Abel', sans-serif;
+
+}
+.direction4{
+    height: 60%;
+    background: #F6F2F2;
+    width: 80%;
+    margin: 5.0rem auto 0rem auto;
+}
+.direction4a{
+    display: flex;
+    justify-content: center;
+    column-gap: 10.0rem;
+    font-family: 'Abel', sans-serif;
+
+}
+.about4{
+    position: relative;
+    font-size: 3.0rem;
+    top: 9.6rem;
+}
+
+.views5{
+    height: 40.0rem;
+    background: #F6F2F2;
+    width: 80%;
+    margin: 5.0rem auto 5.0rem auto;
+    
+}
+.lastPara{
+    font-size: 3.0rem;
+    text-align: center;
+    margin: 5.0rem 16.5rem;
+font-family: 'EB Garamond', serif;
+}
+
+footer{
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    height: 5vh;
+    font-weight: bold;
+    font-family: 'dosis';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+@media(max-width:992px){
+
+    .nav .toggle_btn{
+        display: block;
+    }
+    .dropDown_menu{
+        display: block;
+    }
+}
+
+@media (max-width:576px) {
+    .dropDown_menu{
+        right: 2rem;
+        width: unset;
+    }
+   
+   
+}
+
+@media (max-width:1400px) {
+    .aboutGroom p,.aboutBride p{
+    font-size: 2.0rem;
+ }   
+ .brideImage img{
+    object-fit: contain;
+    width: 15vw;
+    height:40vh;
+ }
+ .aboutCoupleBride{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 25.5rem;
+    margin-top: 5.0rem;
+    column-gap: 5.5rem;
+}
+.ourStoryPara{
+    margin: -2.0rem 16.5rem;
+
+}
+.eventPara{
+    margin: 5.0rem 0rem 0rem 20.7%;
+}
+
+
+}
+
+@media (max-width:1350px) {
+    .direction4a{
+        column-gap: 5rem;
+        }
+.direction4a .about4{
+    font-size: 2rem;
+}
+.direction4a .image4 img{
+    width: 31rem;
+}
+.lastPara{
+  
+    margin: 4.0rem 16.5rem;
+    font-size: 2.5rem;
+}
+}
+
+@media (max-width:1210px) {
+    .ourStoryPara{
+        margin: -2.0rem 12.5rem;
+    
+    }
+}
+
+@media (max-width:1140px) {
+    .aboutGroom p,.aboutBride p{
+    font-size: 1.5rem;
+ }   
+ .brideImage img, .groomImage img{
+    object-fit: contain;
+    width: 15vw;
+    height:40vh;
+ }
+ .ourStoryPara{
+    margin: -5.0rem 12.5rem;
+
+}
+}
+
+
+@media (max-width:1068px) {
+    html{
+        font-size: 55%;
+    }
+    .direction4a .image4 img{
+        width: 25rem;
+    }
+}
+
+@media (max-width:930px) {
+    .aboutGroom p,.aboutBride p{
+    font-size: 1.0rem;
+ }   
+ .brideImage img, .groomImage img{
+    object-fit: contain;
+    width: 15vw;
+    height:40vh;
+ }
+ .ourStoryPara{
+font-size: 2.5rem;
+}
+.eventPara{
+    font-size: 2.3rem;
+}
+.views5 .headings{
+    font-size: 2.1rem;
+}
+.lastPara{
+  
+    margin: 4.0rem 11.5rem;
+    font-size: 1.8rem;
+}
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 45%;
+    }
+    .dropDown_menu{
+        font-size: 2rem;
+    }
+    .nameOfCouple pre{
+        font-size: 4vw;
+        font-family: 'Parisienne', cursive;
+        position: relative;
+        
+        bottom: -0.5rem;
+    }
+    .coupleImage{
+        height: 30.8rem;
+        padding-top: 5.5rem;
+     }
+    .aboutGroom p{
+        font-size: 1.0rem;
+
+     }   
+
+     .brideImage img, .groomImage img{
+        object-fit: contain;
+        width: 15vw;
+        height:40vh;
+     }
+     .aboutCoupleGroom{
+        padding: 0px 22rem;
+        margin-top: -15rem;
+        column-gap: 2.5rem;
+    }
+    .ourStoryPara{
+        margin: 4.0rem 16rem;
+    }
+    .eventPara{
+        font-size: 2.3rem;
+        margin: 5.0rem 0rem 0rem 15.7%;
+    }
+    .eventInformation3 h3{
+        font-size: 4rem;
+    }
+    
+}
+@media (max-width:630px) {
+    .ourStoryPara{
+        margin: 3.0rem 5.3rem;
+  
+    }
+    .eventPara{
+        font-size: 2.0rem;
+        margin: 5.0rem 0rem 0rem 15.7%;
+    }
+    .eventInformation3{
+        height: 46rem;
+    }
+    .direction4a .about4{
+        font-size: 1.7rem;
+        top: 5.5rem;
+    }
+    .direction4a .image4 img{
+        width: 20rem;
+    }
+}
+
+@media (max-width:455px) {
+    .eventPara{
+        font-size: 1.7rem;
+        margin: 5.0rem 0rem 0rem 15.7%;
+    }
+    .eventInformation3 h3{
+        font-size: 2.5rem;
+    }
+
+    .eventInformation3{
+        height: 39rem;
+    }
+    .lastPara{
+        font-size: 1.5rem;
+    }
+    .brideImage img{
+        width: 17.5rem;
+    }
+    .aboutCoupleBride{
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 7.5rem;
+        margin-top: 5.0rem;
+        column-gap: 8.5rem;
+    }
+    .aboutCoupleGroom{
+        padding: 0px 9rem;
+        margin-top: -15rem;
+        column-gap: 6.5rem;
+    }
+    }
